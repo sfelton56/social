@@ -84,13 +84,13 @@ l4789 3 152 330 c84 182 152 336 153 343 0 9 -964 12 -4788 12 l-4787 0 -147
   <script>
       'use strict';
 let el = document.querySelector('.j1'),
-    jb = document.querySelector('.jb'),
+    jb = document.querySelector('.cmu'),
     main = document.querySelector('.main'),
     mainImg = document.querySelector('.main-image__image'),
     em = ['em-hundred'],
     z = [-1, 0, 1];
 document.addEventListener('click', function (e) {
-    if (e.target == jb) {
+    if (e.target == cmu) {
         let s = Math.round(Math.random() * (70 + 10) + 10),
             n = document.createElement('span'),
             d = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
@@ -111,6 +111,11 @@ document.addEventListener('click', function (e) {
     }
 });
 </script>
-  </body>
+
+<style>.cmu:hover{z-index: 9999999999999999;-webkit-transform: scale(1.1); -moz-transform: scale(1.1); -o-transform: scale(1.1); -ms-transform: scale(1.1);}.cmu{z-index: 9999999999999999;}</style>
+<div class="cmu" style="position:fixed;top:30px;right:10px;">
+<img src="http://static.tumblr.com/vqx8rtp/1yro13bc2/hot_tea_and_cookies__2_gabrock__june_17_2015_by_gabriellerock_art-d91ogor.png" width="70"></a></div>
+  
+</body>
   
 </html>
