@@ -52,70 +52,7 @@
   <p><a href="https://soundcloud.com/3mamba" class="button">SoundCloud</a></p>
   </div>
   
-  <aside class="hide">
-<svg xmlns="http://www.w3.org/2000/svg">
-<symbol id="em-central"viewBox="0 0 209.000000 224.000000"><title>em-central</title>
-<g transform="translate(0.000000,224.000000) scale(0.100000,-0.100000)"
-fill="#800000" stroke="none">
-<path d="M5256 7987 l-998 -442 -105 -232 -105 -233 -1141 -2 -1141 -3 -88
--195 c-48 -107 -88 -195 -88 -197 0 -2 717 -3 1594 -3 l1595 0 -38 -82 -38
--83 -457 -3 -456 -2 -26 -58 c-13 -31 -149 -333 -301 -669 l-276 -613 -1222 0
--1222 0 -31 -67 c-17 -38 -75 -168 -130 -290 l-100 -223 2350 0 c1292 0 2348
--4 2346 -8 -1 -5 -16 -41 -33 -80 l-30 -72 -1131 0 -1131 0 -117 -262 c-65
--145 -124 -273 -132 -285 l-14 -23 -862 -2 -862 -3 -88 -190 c-48 -104 -87
--193 -88 -197 0 -5 693 -8 1540 -8 1226 0 1540 -3 1539 -12 0 -7 -17 -47 -37
--88 l-37 -75 -680 -3 -681 -2 -39 -88 c-21 -48 -85 -190 -142 -316 -83 -184
--101 -232 -91 -242 7 -6 280 -210 607 -453 l593 -441 2137 0 2136 1 999 442
-998 442 459 1010 c253 556 462 1018 465 1029 6 18 -29 19 -1587 11 -877 -4
--1594 -8 -1595 -9 0 0 -142 -323 -316 -716 l-316 -715 -591 -3 -591 -2 33 72
-c19 40 395 875 837 1856 l803 1782 579 0 c324 0 578 -4 578 -9 0 -5 -16 -44
--36 -87 -34 -75 -560 -1265 -571 -1292 -4 -10 306 -12 1543 -10 l1548 3 469
-995 c258 547 469 998 470 1001 1 4 -272 205 -607 448 l-610 441 -2120 -1
--2121 0 -999 -442z"/>
-<path d="M228 743 c-81 -181 -150 -336 -154 -346 -6 -16 224 -17 4782 -15
-l4789 3 152 330 c84 182 152 336 153 343 0 9 -964 12 -4788 12 l-4787 0 -147
--327z"/>
-</g>
-  </symbol>
-</svg>
 
-    </aside>
-  
-  <script>
-      'use strict';
-let el = document.querySelector('.j1'),
-    jb = document.querySelector('.cmu'),
-    main = document.querySelector('.main'),
-    mainImg = document.querySelector('.main-image__image'),
-    em = ['em-central'],
-    z = [-1, 0, 1];
-document.addEventListener('click', function (e) {
-    if (e.target == cmu) {
-        let s = Math.round(Math.random() * (70 + 10) + 10),
-            n = document.createElement('span'),
-            d = document.createElementNS('http://www.w3.org/2000/svg', 'svg'),
-            ds = document.createElementNS('http://www.w3.org/2000/svg', 'use'),
-            e = em[Math.floor(Math.random() * em.length)];
-        ds.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', "#" + e);
-        d.classList.add('emegg');
-        d.classList.add(e);
-        d.setAttribute('width', s);
-        d.setAttribute('height', s);
-        d.appendChild(ds);
-        n.appendChild(d);
-        n.style.position = "absolute";
-        n.style.top = String(Math.random() * 90 + "vh");
-        n.style.left = String(Math.random() * 90 + "vw");
-        n.style.zIndex = z[Math.floor(Math.random() * z.length)];
-        document.body.appendChild(n);
-    }
-});
-</script>
-
-<style>.cmu:hover{z-index: 9999999999999999;}.cmu{z-index: 9999999999999999;}</style>
-<div class="cmu" style="position:fixed;top:5px;right:10px;">
-<img src="https://sfelton56.github.io/social/images/cmutransparent.png" width="50"></div>
-  
 </body>
   
 </html>
