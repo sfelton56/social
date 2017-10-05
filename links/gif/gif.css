@@ -1,0 +1,124 @@
+:root{
+  --accent:#ffd700}*{padding:0;margin:0;box-sizing:border-box;position:relative
+}
+html{
+  height:100%;
+  font:87.5%/1.5 -apple-system,BlinkMacSystemFont,SF UI,Helvetica Neue,sans-serif;
+  -webkit-text-size-adjust:100%;
+  overflow:hidden
+}
+a{
+  color:inherit;
+  text-decoration:none;;
+}
+a:focus,a:hover{
+  color:var(--accent);
+  text-decoration:none;
+}
+p{
+  margin-bottom:1.5rem;
+  margin-top:1rem;
+}
+h1{
+  font-size: 2em;
+  text-decoration:none;
+}
+.frac{
+  -webkit-font-feature-settings:"frac" 1;
+  font-feature-settings:"frac" 1
+}
+.caps{
+  -webkit-font-feature-settings:"smcp" 1,"c2sc" 1;
+  font-feature-settings:"smcp" 1,"c2sc" 1
+}
+.site-title{
+  font-weight:700;font-size:1rem;
+  text-decoration:none;
+  padding-right: 5vw;
+  text-align:right;
+}
+.site-title a{
+  text-decoration:none;
+}
+.site-title a:focus,.site-title a:hover{
+  text-decoration:none;
+}
+.site-root{
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-flex-flow:column nowrap;
+  -ms-flex-flow:column nowrap;
+  flex-flow:column;
+  height:100%
+}
+.site-header{
+  padding:2rem;
+  text-decoration:none;
+}
+.site-content{
+  -webkit-box-flex:1;
+  -webkit-flex:1 0 auto;
+  -ms-flex:1 0 auto;
+  flex:1 0 auto;
+  display:table-row;
+  overflow-x:scroll;
+  -webkit-overflow-scrolling:touch;
+  -webkit-box-align:baseline;
+  -webkit-align-items:baseline;
+  -ms-flex-align:baseline;
+  align-items:baseline;
+  padding-left:1.5rem;
+  padding-bottom:0;
+}
+.pane{
+  display:table-cell;
+  height:100%;
+  width:auto;
+  padding-right:.5rem;
+  vertical-align:top
+}
+.pane--text{
+  min-width:50vw;
+  max-width:15em
+}
+.pane__image{
+  background-color:#eee;
+  margin-bottom:1.5rem
+}
+.image__img{
+  display:block;
+  width:100%;
+  -o-object-fit:cover;
+  object-fit:cover;
+  height:calc(100vh - 9rem);
+  -webkit-transition:opacity .5s ease;
+  transition:opacity .5s ease;
+  opacity:1
+}
+@media (orientation:portrait){
+  .image__img{
+    height:calc(95vh - 9rem)
+  }
+}
+.image__img.is-not-loaded{
+  opacity:0
+}
+.u-mb0{
+  margin-bottom:0
+}
+
+@media (max-width:1000px){
+  .site-header{
+    padding:2rem;
+    text-decoration:none;
+    text-align:left;}
+ 
+}
+
+.time{
+  font-weight:700;font-size:1rem;
+  text-decoration:none;
+
+}
